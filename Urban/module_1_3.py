@@ -11,3 +11,5 @@ is_student = True
 print(f'Is Student: {is_student}')
 
 print('Name:', name)
+
+print('dqwqdqdqwdq')
