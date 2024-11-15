@@ -1,0 +1,12 @@
+my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
+index = 0
+
+while index <= len(my_list) - 1:    # Вычитаю 1, т.к. индексация с 0, а не с 1
+    if my_list[index] > 0:
+        print(my_list[index])
+        index += 1
+    elif my_list[index] == 0:
+        index += 1
+        continue
+    else:
+        break
