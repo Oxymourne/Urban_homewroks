@@ -16,11 +16,11 @@ data_structure = [
 def calculate_structure_sum(*args):
     cnt = 0
     for structure in args:
-        if isinstance(structure, int):
+        if isinstance(structure, (int, float)):
             cnt += structure
         elif isinstance(structure, str):
             cnt += len(structure)
-        elif isinstance(structure, list) or isinstance(structure, tuple) or isinstance(structure, set):
+        elif isinstance(structure, (list, tuple, set)):
             for element in structure:
                 cnt += calculate_structure_sum(element)
         elif isinstance(structure, dict):
